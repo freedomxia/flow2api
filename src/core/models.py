@@ -38,6 +38,10 @@ class Token(BaseModel):
     image_concurrency: int = -1  # -1表示无限制
     video_concurrency: int = -1  # -1表示无限制
 
+    # 2K/4K模型开关
+    enable_2k: bool = False  # 是否启用2K模型
+    enable_4k: bool = False  # 是否启用4K模型
+
     # 429禁用相关
     ban_reason: Optional[str] = None  # 禁用原因: "429_rate_limit" 或 None
     banned_at: Optional[datetime] = None  # 禁用时间
