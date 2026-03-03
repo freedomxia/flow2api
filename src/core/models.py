@@ -38,10 +38,6 @@ class Token(BaseModel):
     image_concurrency: int = -1  # -1表示无限制
     video_concurrency: int = -1  # -1表示无限制
 
-    # 2K/4K模型开关
-    enable_2k: bool = False  # 是否启用2K模型
-    enable_4k: bool = False  # 是否启用4K模型
-
     # 429禁用相关
     ban_reason: Optional[str] = None  # 禁用原因: "429_rate_limit" 或 None
     banned_at: Optional[datetime] = None  # 禁用时间
@@ -116,8 +112,17 @@ class AdminConfig(BaseModel):
 class ProxyConfig(BaseModel):
     """Proxy configuration"""
     id: int = 1
-    enabled: bool = False
-    proxy_url: Optional[str] = None
+    enabled: bool = False  # 请求代理开关
+    proxy_url: Optional[str] = None  # 请求代理地址
+    proxy_pool_enabled: bool = False  # 是否启用代理池轮询
+    proxy_pool: Optional[str] = None  # 多行代理池文本
+    rotation_mode: str = "fixed"  # fixed / by_request_count / by_time_window / by_consecutive_failures
+    rotate_every_requests: int = 1  # 按请求次数轮询
+    rotate_every_seconds: int = 300  # 按时间窗口轮询
+    rotate_every_failures: int = 3  # 按连续失败次数轮询
+    sync_browser_proxy: bool = False  # 浏览器打码代理是否跟随请求代理
+    media_proxy_enabled: bool = False  # 图片上传/下载代理开关
+    media_proxy_url: Optional[str] = None  # 图片上传/下载代理地址
 
 
 class GenerationConfig(BaseModel):

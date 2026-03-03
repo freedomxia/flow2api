@@ -8,12 +8,10 @@ services:
     image: flow2api:local
     container_name: flow2api
     ports:
-      - "7799:8000"
+      - "38000:8000"
     volumes:
       - ./data:/app/data
       - ./config/setting.toml:/app/config/setting.toml
     environment:
       - PYTHONUNBUFFERED=1
-      - PLAYWRIGHT_BROWSERS_PATH=/root/.cache/ms-playwright
-      - DISPLAY=:99
     restart: unless-stopped

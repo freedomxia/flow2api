@@ -101,8 +101,36 @@ python main.py
 | `gemini-2.5-flash-image-portrait` | 图/文生图 | 竖屏 |
 | `gemini-3.0-pro-image-landscape` | 图/文生图 | 横屏 |
 | `gemini-3.0-pro-image-portrait` | 图/文生图 | 竖屏 |
+| `gemini-3.0-pro-image-square` | 图/文生图 | 方图 |
+| `gemini-3.0-pro-image-four-three` | 图/文生图 | 横屏 4:3 |
+| `gemini-3.0-pro-image-three-four` | 图/文生图 | 竖屏 3:4 |
+| `gemini-3.0-pro-image-landscape-2k` | 图/文生图(2K) | 横屏 |
+| `gemini-3.0-pro-image-portrait-2k` | 图/文生图(2K) | 竖屏 |
+| `gemini-3.0-pro-image-square-2k` | 图/文生图(2K) | 方图 |
+| `gemini-3.0-pro-image-four-three-2k` | 图/文生图(2K) | 横屏 4:3 |
+| `gemini-3.0-pro-image-three-four-2k` | 图/文生图(2K) | 竖屏 3:4 |
+| `gemini-3.0-pro-image-landscape-4k` | 图/文生图(4K) | 横屏 |
+| `gemini-3.0-pro-image-portrait-4k` | 图/文生图(4K) | 竖屏 |
+| `gemini-3.0-pro-image-square-4k` | 图/文生图(4K) | 方图 |
+| `gemini-3.0-pro-image-four-three-4k` | 图/文生图(4K) | 横屏 4:3 |
+| `gemini-3.0-pro-image-three-four-4k` | 图/文生图(4K) | 竖屏 3:4 |
 | `imagen-4.0-generate-preview-landscape` | 图/文生图 | 横屏 |
 | `imagen-4.0-generate-preview-portrait` | 图/文生图 | 竖屏 |
+| `gemini-3.1-flash-image-landscape` | 图/文生图 | 横屏 |
+| `gemini-3.1-flash-image-portrait` | 图/文生图 | 竖屏 |
+| `gemini-3.1-flash-image-square` | 图/文生图 | 方图 |
+| `gemini-3.1-flash-image-four-three` | 图/文生图 | 横屏 4:3 |
+| `gemini-3.1-flash-image-three-four` | 图/文生图 | 竖屏 3:4 |
+| `gemini-3.1-flash-image-landscape-2k` | 图/文生图(2K) | 横屏 |
+| `gemini-3.1-flash-image-portrait-2k` | 图/文生图(2K) | 竖屏 |
+| `gemini-3.1-flash-image-square-2k` | 图/文生图(2K) | 方图 |
+| `gemini-3.1-flash-image-four-three-2k` | 图/文生图(2K) | 横屏 4:3 |
+| `gemini-3.1-flash-image-three-four-2k` | 图/文生图(2K) | 竖屏 3:4 |
+| `gemini-3.1-flash-image-landscape-4k` | 图/文生图(4K) | 横屏 |
+| `gemini-3.1-flash-image-portrait-4k` | 图/文生图(4K) | 竖屏 |
+| `gemini-3.1-flash-image-square-4k` | 图/文生图(4K) | 方图 |
+| `gemini-3.1-flash-image-four-three-4k` | 图/文生图(4K) | 横屏 4:3 |
+| `gemini-3.1-flash-image-three-four-4k` | 图/文生图(4K) | 竖屏 3:4 |
 
 ### 视频生成
 
@@ -117,6 +145,12 @@ python main.py
 | `veo_2_1_fast_d_15_t2v_landscape` | 文生视频 | 横屏 |
 | `veo_2_0_t2v_portrait` | 文生视频 | 竖屏 |
 | `veo_2_0_t2v_landscape` | 文生视频 | 横屏 |
+| `veo_3_1_t2v_fast_portrait_ultra` | 文生视频 | 竖屏 |
+| `veo_3_1_t2v_fast_ultra` | 文生视频 | 横屏 |
+| `veo_3_1_t2v_fast_portrait_ultra_relaxed` | 文生视频 | 竖屏 |
+| `veo_3_1_t2v_fast_ultra_relaxed` | 文生视频 | 横屏 |
+| `veo_3_1_t2v_portrait` | 文生视频 | 竖屏 |
+| `veo_3_1_t2v_landscape` | 文生视频 | 横屏 |
 
 #### 首尾帧模型 (I2V - Image to Video)
 📸 **支持1-2张图片：1张作为首帧，2张作为首尾帧**
@@ -127,20 +161,51 @@ python main.py
 
 | 模型名称 | 说明| 尺寸 |
 |---------|---------|--------|
-| `veo_3_1_i2v_s_fast_fl_portrait` | 图生视频 | 竖屏 |
-| `veo_3_1_i2v_s_fast_fl_landscape` | 图生视频 | 横屏 |
+| `veo_3_1_i2v_s_fast_portrait_fl` | 图生视频 | 竖屏 |
+| `veo_3_1_i2v_s_fast_fl` | 图生视频 | 横屏 |
 | `veo_2_1_fast_d_15_i2v_portrait` | 图生视频 | 竖屏 |
 | `veo_2_1_fast_d_15_i2v_landscape` | 图生视频 | 横屏 |
 | `veo_2_0_i2v_portrait` | 图生视频 | 竖屏 |
 | `veo_2_0_i2v_landscape` | 图生视频 | 横屏 |
+| `veo_3_1_i2v_s_fast_portrait_ultra_fl` | 图生视频 | 竖屏 |
+| `veo_3_1_i2v_s_fast_ultra_fl` | 图生视频 | 横屏 |
+| `veo_3_1_i2v_s_fast_portrait_ultra_relaxed` | 图生视频 | 竖屏 |
+| `veo_3_1_i2v_s_fast_ultra_relaxed` | 图生视频 | 横屏 |
+| `veo_3_1_i2v_s_portrait` | 图生视频 | 竖屏 |
+| `veo_3_1_i2v_s_landscape` | 图生视频 | 横屏 |
 
 #### 多图生成 (R2V - Reference Images to Video)
 🖼️ **支持多张图片**
 
 | 模型名称 | 说明| 尺寸 |
 |---------|---------|--------|
-| `veo_3_0_r2v_fast_portrait` | 图生视频 | 竖屏 |
-| `veo_3_0_r2v_fast_landscape` | 图生视频 | 横屏 |
+| `veo_3_1_r2v_fast_portrait` | 图生视频 | 竖屏 |
+| `veo_3_1_r2v_fast` | 图生视频 | 横屏 |
+| `veo_3_1_r2v_fast_portrait_ultra` | 图生视频 | 竖屏 |
+| `veo_3_1_r2v_fast_ultra` | 图生视频 | 横屏 |
+| `veo_3_1_r2v_fast_portrait_ultra_relaxed` | 图生视频 | 竖屏 |
+| `veo_3_1_r2v_fast_ultra_relaxed` | 图生视频 | 横屏 |
+
+#### 视频放大模型 (Upsample)
+
+| 模型名称 | 说明 | 输出 |
+|---------|---------|--------|
+| `veo_3_1_t2v_fast_portrait_4k` | 文生视频放大 | 4K |
+| `veo_3_1_t2v_fast_4k` | 文生视频放大 | 4K |
+| `veo_3_1_t2v_fast_portrait_ultra_4k` | 文生视频放大 | 4K |
+| `veo_3_1_t2v_fast_ultra_4k` | 文生视频放大 | 4K |
+| `veo_3_1_t2v_fast_portrait_1080p` | 文生视频放大 | 1080P |
+| `veo_3_1_t2v_fast_1080p` | 文生视频放大 | 1080P |
+| `veo_3_1_t2v_fast_portrait_ultra_1080p` | 文生视频放大 | 1080P |
+| `veo_3_1_t2v_fast_ultra_1080p` | 文生视频放大 | 1080P |
+| `veo_3_1_i2v_s_fast_portrait_ultra_fl_4k` | 图生视频放大 | 4K |
+| `veo_3_1_i2v_s_fast_ultra_fl_4k` | 图生视频放大 | 4K |
+| `veo_3_1_i2v_s_fast_portrait_ultra_fl_1080p` | 图生视频放大 | 1080P |
+| `veo_3_1_i2v_s_fast_ultra_fl_1080p` | 图生视频放大 | 1080P |
+| `veo_3_1_r2v_fast_portrait_ultra_4k` | 多图视频放大 | 4K |
+| `veo_3_1_r2v_fast_ultra_4k` | 多图视频放大 | 4K |
+| `veo_3_1_r2v_fast_portrait_ultra_1080p` | 多图视频放大 | 1080P |
+| `veo_3_1_r2v_fast_ultra_1080p` | 多图视频放大 | 1080P |
 
 ## 📡 API 使用示例（需要使用流式）
 
@@ -151,7 +216,7 @@ curl -X POST "http://localhost:8000/v1/chat/completions" \
   -H "Authorization: Bearer han1234" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gemini-2.5-flash-image-landscape",
+    "model": "gemini-3.1-flash-image-landscape",
     "messages": [
       {
         "role": "user",
@@ -169,7 +234,7 @@ curl -X POST "http://localhost:8000/v1/chat/completions" \
   -H "Authorization: Bearer han1234" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "imagen-4.0-generate-preview-landscape",
+    "model": "gemini-3.1-flash-image-landscape",
     "messages": [
       {
         "role": "user",
